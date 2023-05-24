@@ -14,14 +14,14 @@ public class C04_DriverIlkTest {
     public void test01(){
 
         // amazon sayfasına gidin
-        Driver.getdriver().get("https://www.amazon.com");
+        Driver.getDriver().get("https://www.amazon.com");
 
         // Nutella icin arama yapin
-        WebElement aramaKutusu = Driver.getdriver().findElement(By.id("twotabsearchtextbox"));
+        WebElement aramaKutusu = Driver.getDriver().findElement(By.id("twotabsearchtextbox"));
         aramaKutusu.sendKeys("Nutella"+ Keys.ENTER);
 
         // arama sonuclarinin Nutella kelimesi icerdigini test edin
-        WebElement sonucElemnti=Driver.getdriver().findElement(By.xpath("(//div[@class='sg-col-inner'])[1]"));
+        WebElement sonucElemnti=Driver.getDriver().findElement(By.xpath("(//div[@class='sg-col-inner'])[1]"));
 
         String expectedIcerik = "Nutella";
         String actualIcerik = sonucElemnti.getText();

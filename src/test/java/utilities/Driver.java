@@ -9,7 +9,7 @@ import java.time.Duration;
 public class Driver {
 
     static WebDriver driver;
-    public static WebDriver getdriver(){
+    public static WebDriver getDriver(){
         WebDriverManager.chromedriver().setup();
 
         if (driver==null){

@@ -12,7 +12,7 @@ public class C01_PageIlkTest {
     public void amazonTest(){
 
         // amazon anasayfaya gidelim
-        Driver.getdriver().get("https://www.amazon.com");
+        Driver.getDriver().get("https://www.amazon.com");
 
         // Arama kutusunun locate'i pages sayfasinda
         // POM'de pages sayfasindaki locate'lere erismek icin
